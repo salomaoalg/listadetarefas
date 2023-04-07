@@ -1,0 +1,9 @@
+.main{
+  background-color: beige;
+
+  padding: 10px;
+  text-align: center;
+  color: rgb(203, 127, 33);
+  border: 7px rgb(124, 124, 75) solid;
+  box-shadow: 0 0 20px rgb(124, 124, 75);
+}
