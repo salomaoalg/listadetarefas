@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Main.css';
 
+import { FaPlus } from 'react-icons/fa';
+
 export default class Main extends Component {
   constructor(props) {
     super(props);
@@ -22,14 +24,19 @@ export default class Main extends Component {
 
   render() {
     const { novatarefa } = this.state;
-    //alert(novatarefa);
+
     return (
       <div className='main'>
         <h1>Lista de Tarefas</h1>
 
-        <form action="#">
-          <input onChange={this.inputMudou} type="text" />
-          <button type='submit'>Enviar</button>
+        <form action="#" className='form'>
+          <input onChange={this.inputMudou}
+           type="text"
+           value={novatarefa} 
+           />
+          <button type='submit'>
+            <FaPlus />
+          </button>
         </form>
       </div>
     );
